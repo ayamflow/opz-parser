@@ -1,0 +1,24 @@
+{
+  "name": "opz",
+  "version": "0.0.1",
+  "description": "A Javascript MIDI parser for the Teenage Engineering's OP-Z",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayamflow/opz-parser.git"
+  },
+  "keywords": [
+    "opz",
+    "teenage",
+    "engineering",
+    "parser",
+    "midi"
+  ],
+  "author": "Florian Morel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayamflow/opz-parser/issues"
+  },
+  "homepage": "https://github.com/ayamflow/opz-parser#readme"
+}
