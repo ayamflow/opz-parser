@@ -26,7 +26,7 @@ const ACTIONS = [
 
 const NOTE_START_OFFSET = 53
 
-function parseOPZMessage(message) {
+export function parseOPZMessage(message) {
     const {command, channel, note, velocity} = parseMidiMessage(message)
     let track = TRACKS[channel]
     let key = note - NOTE_START_OFFSET
@@ -34,5 +34,3 @@ function parseOPZMessage(message) {
 
     return({track, key, action})
 }
-
-export default parseOPZMessage

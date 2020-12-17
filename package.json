@@ -2,8 +2,11 @@
   "name": "opz",
   "version": "0.0.1",
   "description": "A Javascript MIDI parser for the Teenage Engineering's OP-Z",
-  "main": "index.js",
-  "scripts": {},
+  "main": "lib/index.js",
+  "module": "index.js",
+  "scripts": {
+    "build": "microbundle build -i ./index.js -o lib/index.js --no-pkg-main -f cjs --no-compress --sourcemap false"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ayamflow/opz-parser.git"
@@ -20,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/ayamflow/opz-parser/issues"
   },
-  "homepage": "https://github.com/ayamflow/opz-parser#readme"
+  "homepage": "https://github.com/ayamflow/opz-parser#readme",
+  "devDependencies": {
+    "microbundle": "^0.12.4"
+  }
 }

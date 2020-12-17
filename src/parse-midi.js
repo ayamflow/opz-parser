@@ -1,4 +1,4 @@
-function parseMidiMessage(message) {
+export function parseMidiMessage(message) {
     return {
         command: message.data[0] >> 4,
         channel: message.data[0] & 0xf,
@@ -6,5 +6,3 @@ function parseMidiMessage(message) {
         velocity: message.data[2] / 127
     }
 }
-
-export default parseMidiMessage

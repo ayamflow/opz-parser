@@ -1,1 +1,1 @@
-export { OPZParser } from 'src'
+export { OPZParser } from './src'

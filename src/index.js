@@ -1,6 +1,6 @@
 import { parseOPZMessage } from './parse-opz'
 
-class OPZParser {
+export class OPZParser {
     construtor() {
         this.onMIDISuccess = this.onMIDISuccess.bind(this)
         this.onMIDIFailure = this.onMIDIFailure.bind(this)
